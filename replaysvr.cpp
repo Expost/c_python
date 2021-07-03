@@ -22,6 +22,7 @@ extern "C" int init()
     py::object result = init_func();
     int ret = result.cast<int>();
     printf("init result is %d\n", ret);
+    return 0;
 }
 
 extern "C" int on_recv()
